@@ -165,7 +165,7 @@ void CDboApplication::SetErrorReport()
     BT_SetAppName(_T(m_DboGlobal.GetConfigData()->strBugTrapFolder.c_str()));
 	BT_SetAppVersion(szVer);
 	BT_SetFlags(BTF_DETAILEDMODE | BTF_EDITMAIL | BTF_ATTACHREPORT | BTF_SCREENCAPTURE | BTF_INTERCEPTSUEF);
-	BT_SetSupportURL(_T("https://opendbo.org"));
+	BT_SetSupportURL(_T("https://addyoursite.org"));
     BT_SetSupportServer(GetDboGlobal()->GetConfigData()->strBugTrapServerIP.c_str(), (SHORT)GetDboGlobal()->GetConfigData()->dwBugTrapServerPort);
 	BT_InstallSehFilter();
 

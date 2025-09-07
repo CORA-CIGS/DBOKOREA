@@ -24,7 +24,7 @@
 #define NTL_DEBUG_WINDOW_MODE		FALSE
 
 const TCHAR kMainWindowClassName[] = _T("DragonBall");
-const TCHAR kMainWindowName[]      = _T("OpenDBO");
+const TCHAR kMainWindowName[]      = _T("DBOKOREA");
 LRESULT CALLBACK MainWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 typedef RwTexture*	(*CallTextureLoad)(const RwChar *pPath, const RwChar *pFileName, const RwChar *pMaskName);
