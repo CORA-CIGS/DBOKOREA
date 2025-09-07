@@ -51,7 +51,9 @@ DBOKOREA/
 ```bash
 git clone https://github.com/CORA-CIGS/DBOKOREA.git
 ```
+ 
 2. **Extract Xtreme Toolkitpro and GFx SDK 3.3 somehwere**
+ 
 3. **Set up environment variables:**
    - Open the Control Panel, go into System and Security, and click on System
    - In the search bar, type in "System Environment Variables" and open "Edit the system environment variables"
