@@ -118,7 +118,7 @@ git clone https://github.com/CORA-CIGS/DBOKOREA.git
     - Click "Install while downloading" and wait for the process to complete.
 
 3. **Download and extract the DBOKOREA Repository:**
-    - [OpenDBO-Core Repository](https://github.com/CORA-CIGS/DBOKOREA). Click "Code" -> Download ZIP.
+    - [DBOKOREA's Repository](https://github.com/CORA-CIGS/DBOKOREA). Click "Code" -> Download ZIP.
     - Extract the ZIP file to the main folder named "DBOKOREA"
 
 4. **Download and install/extract additional programs: it's recommended to set up the Client repository now. Otherwise perform steps 1 and 2 from the Client guide (if you already did it you can skip this step)**
