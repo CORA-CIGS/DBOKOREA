@@ -1,4 +1,4 @@
-# 🐉 DBO Project
+# 🐉 DBO KOREA PROJECT
 
 **Dragon Ball Online Project**  
 Private development repository for server, client, assets, and tools related to Dragon Ball Online (DBO).
