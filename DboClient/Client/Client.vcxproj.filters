@@ -297,6 +297,9 @@
     <Filter Include="Gui\Exception">
       <UniqueIdentifier>{10fd2886-6532-4474-8419-a1561824bdaa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gui\Component\Game\AggroList">
+      <UniqueIdentifier>{434e4d41-3981-4c9b-b031-fb293a2df248}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Gui\ContractGui.cpp">
@@ -1226,6 +1229,12 @@
     <ClCompile Include="MascotStatusBarGui.cpp">
       <Filter>Gui\Component\Game\Mascot</Filter>
     </ClCompile>
+    <ClCompile Include="Gui\OptionFilter.cpp">
+      <Filter>Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="AggroListGui.cpp">
+      <Filter>Gui\Component\Game\AggroList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Gui\ContractGui.h">
@@ -2152,8 +2161,8 @@
     <ClInclude Include="Gui\OptionFilter.h">
       <Filter>Gui\Component\Game\Option</Filter>
     </ClInclude>
-    <ClInclude Include="Gui\OptionFilter.cpp">
-      <Filter>Gui\Component\Game\Option</Filter>
+    <ClInclude Include="AggroListGui.h">
+      <Filter>Gui\Component\Game\AggroList</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -275,3 +275,8 @@ RWS::CEventId g_EventMascotRegister;
 RWS::CEventId g_EventMascotDelete;
 RWS::CEventId g_EventMascotSummon;
 RWS::CEventId g_EventMascotUnSummon;
+
+// Aggro
+RWS::CEventId g_EventAggroListNfy;
+RWS::CEventId g_EventAggroUpdateNfy;
+RWS::CEventId g_EventAggroResetNfy;

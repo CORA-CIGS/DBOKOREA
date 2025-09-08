@@ -279,6 +279,11 @@ public:
 	static void DeleteMascotRes(BYTE index);
 	static void MascotSummonRes(BYTE index);
 	static void MascotUnSummonRes(BYTE index);
+
+	//Aggro
+	static void AggroListNfy(BYTE Count, DWORD TotalAggroPoint, HOBJECT Target, sCHAR_AGGRO_INFO AggroInfo[NTL_PARTY_MAX_AGGRO]);
+	static void AggroUpdateNfy(BYTE Count, DWORD TotalAggroPoint, HOBJECT Target, sCHAR_AGGRO_INFO AggroInfo[NTL_PARTY_MAX_AGGRO]);
+	static void AggroResetNyf(SERIAL_HANDLE hHandle);
 };
 
 #endif

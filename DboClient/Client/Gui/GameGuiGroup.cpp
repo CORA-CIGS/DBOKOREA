@@ -152,6 +152,9 @@
 #include "MascotSkillReMake.h"
 #include "MascotStatusBarGui.h"
 
+// Aggro
+#include "AggroListGui.h"
+
 
 // 2007.11.17 by agebreak
 // A macro function that creates a dialog and registers it in the dialog manager.
@@ -331,6 +334,9 @@ CGameGuiGroup::CGameGuiGroup()
 , m_pMascotFusion(NULL)
 , m_pMascotSkillReMake(NULL)
 , m_pMascotStatusBarGui(NULL)
+
+// Aggro
+, m_pAggroListGui(NULL)
 {	
 }
 
@@ -787,6 +793,8 @@ RwBool CGameGuiGroup::Create(void)
 
 	AddDialog(m_pCCBDBoardGui, CCCBDBoardGui, "CCBDBoardGui", DIALOG_CCBD_BOARD);
 
+	AddDialog(m_pAggroListGui, CAggroListGui, "CAggroListGui", DIALOG_AGGRO_LIST);
+
 
 
 	// gui manager signal
@@ -977,6 +985,9 @@ void CGameGuiGroup::Destroy(void)
 	RemoveDialog(m_pMascotGui);
 	RemoveDialog(m_pMascotFusion);
 	RemoveDialog(m_pMascotSkillReMake);
+
+	// Aggro
+	RemoveDialog(m_pAggroListGui);
 			
 	if( m_pCinematicGui )
 	{

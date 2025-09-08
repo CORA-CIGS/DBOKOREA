@@ -127,6 +127,9 @@ class CMascotFusion;
 class CMascotSkillReMake;
 class CMascotStatusBarGui;
 
+// Aggro
+class CAggroListGui;
+
 class CGMGuiGroup;
 
 class CGameGuiGroup : public RWS::CEventHandler
@@ -244,10 +247,13 @@ private:
 	CCCBDRewardGui*				m_pCCBDRewardGui;
 
 	// Mascot
-	CMascotGui* m_pMascotGui;
-	CMascotFusion* m_pMascotFusion;
-	CMascotSkillReMake* m_pMascotSkillReMake;
-	CMascotStatusBarGui* m_pMascotStatusBarGui;
+	CMascotGui*					m_pMascotGui;
+	CMascotFusion*				m_pMascotFusion;
+	CMascotSkillReMake*			m_pMascotSkillReMake;
+	CMascotStatusBarGui*		m_pMascotStatusBarGui;
+
+	// Aggro
+	CAggroListGui*				m_pAggroListGui;
 
 	gui::CSlot m_slotPaint;
 		

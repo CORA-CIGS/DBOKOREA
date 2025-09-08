@@ -218,6 +218,11 @@ RwBool CDboEventHandler::Create(void)
 	RegisterMsg(g_EventMascotDelete, "g_EventMascotDelete", "SDboEventMascotOperate");
 	RegisterMsg(g_EventMascotSummon, "g_EventMascotSummon", "SDboEventMascotOperate");
 	RegisterMsg(g_EventMascotUnSummon, "g_EventMascotUnSummon", "SDboEventMascotOperate");
+
+	// Aggro
+	RegisterMsg(g_EventAggroListNfy, "g_EventAggroListNfy", "SDboEventAggroListNfy");
+	RegisterMsg(g_EventAggroUpdateNfy, "g_EventAggroUpdateNfy", "SDboEventAggroUpdateNfy");
+	RegisterMsg(g_EventAggroResetNfy, "g_EventAggroResetNfy", "SDboEventAggroResetNfy");
 	
 	//test		
 	RegisterMsg(g_EventSCS, "g_EventSCS", "" );
@@ -421,6 +426,11 @@ void CDboEventHandler::Destroy(void)
 	UnRegisterMsg(g_EventMascotDelete);
 	UnRegisterMsg(g_EventMascotSummon);
 	UnRegisterMsg(g_EventMascotUnSummon);
+
+	// Aggro
+	UnRegisterMsg(g_EventAggroListNfy);
+	UnRegisterMsg(g_EventAggroUpdateNfy);
+	UnRegisterMsg(g_EventAggroResetNfy);
 
 	//test		
 	UnRegisterMsg(g_EventSCS);

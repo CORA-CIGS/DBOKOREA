@@ -34,6 +34,7 @@
     <OutDir>$(SolutionDir)DragonBall\</OutDir>
     <IntDir>(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>GameStart</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
@@ -112,6 +113,7 @@
     <ClCompile Include="..\BVL\MoviePlayer.cpp" />
     <ClCompile Include="..\DirectShow\DirectShowMovie.cpp" />
     <ClCompile Include="Addin\DboAddinManager.cpp" />
+    <ClCompile Include="AggroListGui.cpp" />
     <ClCompile Include="CCBDBoardGui.cpp" />
     <ClCompile Include="CCBDNotifyGui.cpp" />
     <ClCompile Include="CCBDRewardGui.cpp" />
@@ -438,6 +440,7 @@
     <ClInclude Include="Addin\Devil\ilu.h" />
     <ClInclude Include="Addin\Devil\ilut.h" />
     <ClInclude Include="Addin\Devil\ilu_region.h" />
+    <ClInclude Include="AggroListGui.h" />
     <ClInclude Include="CCBDBoardGui.h" />
     <ClInclude Include="CCBDNotifyGui.h" />
     <ClInclude Include="CCBDRewardGui.h" />

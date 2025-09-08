@@ -923,4 +923,9 @@ void PacketHandler_GSMascotExSummonRes(void* pPacket);
 void PacketHandler_GSUpdateMascotSummon(void* pPacket);
 void PacketHandler_GSMascotExUnSummonRes(void* pPacket);
 
+// Aggro
+void PacketHandler_GSAvatarAggroListNfy(void* pPacket);
+void PacketHandler_GSAvatarAggroUpdateNfy(void* pPacket);
+void PacketHandler_GSAvatarAggroReSetNfy(void* pPacket);
+
 #endif

@@ -1804,3 +1804,47 @@ void CDboEventGenerator::MascotUnSummonRes(BYTE index)
 	sData.index = index;
 	SEND_MSG(g_EventMascotUnSummon, &sData);
 }
+
+void CDboEventGenerator::AggroListNfy(BYTE Count, DWORD TotalAggroPoint, HOBJECT Target, sCHAR_AGGRO_INFO AggroInfo[NTL_PARTY_MAX_AGGRO])
+{
+
+	SDboEventAggroListNfy pdata;
+
+	pdata.byCount = Count;
+	pdata.dwTotalAggroPoint = TotalAggroPoint;
+	pdata.hTarget = Target;
+
+
+	for (RwInt32 i = 0; i < NTL_PARTY_MAX_AGGRO; ++i)
+	{
+		pdata.aAggroInfo[i].dwAggoPoint = AggroInfo[i].dwAggoPoint;
+		pdata.aAggroInfo[i].handle = AggroInfo[i].handle;
+	}
+
+	SEND_MSG(g_EventAggroListNfy, &pdata);
+}
+
+void CDboEventGenerator::AggroUpdateNfy(BYTE Count, DWORD TotalAggroPoint, HOBJECT Target, sCHAR_AGGRO_INFO AggroInfo[NTL_PARTY_MAX_AGGRO])
+{
+	SDboEventAggroUpdateNfy data;
+
+	data.byCount = Count;
+	data.dwTotalAggroPoint = TotalAggroPoint;
+	data.hTarget = Target;
+
+	for (RwInt32 i = 0; i < NTL_PARTY_MAX_AGGRO; ++i)
+	{
+		data.aAggroInfo[i].dwAggoPoint = AggroInfo[i].dwAggoPoint;
+		data.aAggroInfo[i].handle = AggroInfo[i].handle;
+	}
+
+	SEND_MSG(g_EventAggroUpdateNfy, &data);
+}
+
+void CDboEventGenerator::AggroResetNyf(SERIAL_HANDLE hHandle)
+{
+	SDboEventAggroResetNfy sData;
+	sData.hTarget = hHandle;
+
+	SEND_MSG(g_EventAggroResetNfy, &sData);
+}

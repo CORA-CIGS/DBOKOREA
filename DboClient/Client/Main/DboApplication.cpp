@@ -165,7 +165,7 @@ void CDboApplication::SetErrorReport()
     BT_SetAppName(_T(m_DboGlobal.GetConfigData()->strBugTrapFolder.c_str()));
 	BT_SetAppVersion(szVer);
 	BT_SetFlags(BTF_DETAILEDMODE | BTF_EDITMAIL | BTF_ATTACHREPORT | BTF_SCREENCAPTURE | BTF_INTERCEPTSUEF);
-	BT_SetSupportURL(_T("https://addyoursite.org"));
+	BT_SetSupportURL(_T("https://dbokorea.to"));
     BT_SetSupportServer(GetDboGlobal()->GetConfigData()->strBugTrapServerIP.c_str(), (SHORT)GetDboGlobal()->GetConfigData()->dwBugTrapServerPort);
 	BT_InstallSehFilter();
 
@@ -203,7 +203,7 @@ RwBool CDboApplication::CreateSubSystem(RwUInt32 iWidth, RwUInt32 iHeight, RwBoo
 
 	if(byMasterRes == DEVMASTER_INVALID_SERIAL)
 	{
-		MessageBox(GetHWnd(), "Develoment master file is invalid key\n master debug can not use !!!\n Please contact to programmer (Mr. Jang - hyung suk)", "Error", MB_OK);
+		MessageBox(GetHWnd(), "Develoment master file is invalid key\n master debug can not use !!!\n Please contact to programmer (Core Interactive Games)", "Error", MB_OK);
 	}
 
 #ifdef NDEBUG

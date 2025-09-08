@@ -307,6 +307,11 @@ extern RWS::CEventId g_EventMascotDelete;
 extern RWS::CEventId g_EventMascotSummon;
 extern RWS::CEventId g_EventMascotUnSummon;
 
+// Aggro
+extern RWS::CEventId g_EventAggroListNfy;
+extern RWS::CEventId g_EventAggroUpdateNfy;
+extern RWS::CEventId g_EventAggroResetNfy;
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1471,6 +1476,27 @@ struct SDboEventMascotRegister
 struct SDboEventMascotOperate
 {
 	BYTE	index;
+};
+
+struct SDboEventAggroListNfy
+{
+	SERIAL_HANDLE		hTarget;
+	DWORD				dwTotalAggroPoint;
+	BYTE				byCount;
+	sCHAR_AGGRO_INFO	aAggroInfo[NTL_PARTY_MAX_AGGRO];
+};
+
+struct SDboEventAggroUpdateNfy
+{
+	SERIAL_HANDLE		hTarget;
+	DWORD				dwTotalAggroPoint;
+	BYTE				byCount;
+	sCHAR_AGGRO_INFO	aAggroInfo[NTL_PARTY_MAX_AGGRO];
+};
+
+struct SDboEventAggroResetNfy
+{
+	SERIAL_HANDLE		hTarget;
 };
 
 #endif

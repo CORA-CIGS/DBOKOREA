@@ -5090,4 +5090,30 @@ void PacketHandler_GSMascotExDeleteRes(void* pPacket)
 	}
 }
 
+// Aggro 
+void PacketHandler_GSAvatarAggroListNfy(void* pPacket)
+{
+	//DBO_WARNING_MESSAGE("µ±µã»÷ÓµÓÐ³ðºÞÖµµÄ¹ÖÎïÊ±£¬ÇÐ»»³ðºÞÖµÁÐ±íÊý¾Ý");
+	sGU_AGGRO_LIST_NFY* pResult = (sGU_AGGRO_LIST_NFY*)pPacket;
+
+	CDboEventGenerator::AggroListNfy(pResult->byCount, pResult->dwTotalAggroPoint, pResult->hTarget, pResult->aAggroInfo);
+}
+
+void PacketHandler_GSAvatarAggroUpdateNfy(void* pPacket)
+{
+	//DBO_WARNING_MESSAGE("¸üÐÂµ±Ç°¹ÖÎïµÄ³ðºÞÖµÄ¿Â¼");
+	sGU_AGGRO_UPDATE_NFY* pResult = (sGU_AGGRO_UPDATE_NFY*)pPacket;
+
+	CDboEventGenerator::AggroUpdateNfy(pResult->byCount, pResult->dwTotalAggroPoint, pResult->hTarget, pResult->aAggroInfo);
+
+}
+
+void PacketHandler_GSAvatarAggroReSetNfy(void* pPacket)
+{
+	//DBO_WARNING_MESSAGE("¹ÖÎïËÀÍö»òÕßÀë¿ª¹ÖÎïÊÆÁ¦·¶Î§ÖØÖÃ");
+	sGU_AGGRO_RESET_NFY* pResult = (sGU_AGGRO_RESET_NFY*)pPacket;
+
+	CDboEventGenerator::AggroResetNyf(pResult->hTarget);
+}
+
 
