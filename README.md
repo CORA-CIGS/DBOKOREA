@@ -43,6 +43,8 @@ DBOKOREA/
 - Xampp & Navicat / PhpMyAdmin
 - [GFx SDK 3.3](https://drive.google.com/file/d/1Zaz8ny7lQMJzEx2NY1KXCIO3Z-l-gqDW/view?usp=drive_link)
 - [Xtreme Toolkitpro](https://drive.google.com/file/d/1xPINveAcrFTL4EdmRYkH_0o1PHwyIClg/view?usp=drive_link)
+- [Base Client](https://drive.google.com/file/d/1uBzvu2DhdjXjmxXuSYEHvIBPkZKhAb-E/view?usp=drive_link)
+- Extract base Client in DBOKOREA/DboClient/
 
 ### Installation / Setup
 <details>
@@ -169,7 +171,6 @@ git clone https://github.com/CORA-CIGS/DBOKOREA.git
     - Run the client, enter your username and password, and you’re ready to go.
 
 </details>
-Alternatively there's a video showcasing this process: https://www.youtube.com/watch?v=lWDffP81ACw
 
 ## Acknowledgements
 All and any copyrighted material belongs to their respective owners, this is just a non-profit fan project aiming for game preservation. Thanks to DBOG for providing the base for this source code.
