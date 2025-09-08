@@ -43,6 +43,8 @@ DBOKOREA/
 - Xampp & Navicat / PhpMyAdmin
 - [GFx SDK 3.3](https://drive.google.com/file/d/1Zaz8ny7lQMJzEx2NY1KXCIO3Z-l-gqDW/view?usp=drive_link)
 - [Xtreme Toolkitpro](https://drive.google.com/file/d/1xPINveAcrFTL4EdmRYkH_0o1PHwyIClg/view?usp=drive_link)
+- [Base Client](https://drive.google.com/file/d/1uBzvu2DhdjXjmxXuSYEHvIBPkZKhAb-E/view?usp=drive_link)
+- Extract base Client in DBOKOREA/DboClient/
 
 ### Installation / Setup
 <details>
