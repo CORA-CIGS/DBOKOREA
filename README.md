@@ -169,7 +169,6 @@ git clone https://github.com/CORA-CIGS/DBOKOREA.git
     - Run the client, enter your username and password, and you’re ready to go.
 
 </details>
-Alternatively there's a video showcasing this process: https://www.youtube.com/watch?v=lWDffP81ACw
 
 ## Acknowledgements
 All and any copyrighted material belongs to their respective owners, this is just a non-profit fan project aiming for game preservation. Thanks to DBOG for providing the base for this source code.
