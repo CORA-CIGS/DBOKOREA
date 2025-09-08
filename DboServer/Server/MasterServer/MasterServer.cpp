@@ -137,7 +137,7 @@ int main(int argc, _TCHAR* argv[])
 	SYSTEMTIME ti;
 	GetLocalTime( &ti );
 
-	SetConsoleTitle(TEXT("OpenDBO Master Server"));
+	SetConsoleTitle(TEXT("Master Server"));
 
 	int rc = app.Create(argc, argv, ".\\config\\MasterServer.ini");
 

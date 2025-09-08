@@ -635,7 +635,7 @@ int main(int argc, _TCHAR* argv[])
 		return rc;
 
 	CNtlString consolename;
-	consolename.Format("OpenDBO Game Server - Server %d Channel %d", app.GetGsServerId(), app.GetGsChannel());
+	consolename.Format("Game Server - Server %d Channel %d", app.GetGsServerId(), app.GetGsChannel());
 	SetConsoleTitle(consolename.c_str());
 
 	// LOG FILE

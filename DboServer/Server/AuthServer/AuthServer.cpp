@@ -255,7 +255,7 @@ int main(int argc, _TCHAR* argv[])
 	SYSTEMTIME ti;
 	GetLocalTime(&ti);
 
-	SetConsoleTitle(TEXT("OpenDBO Authentication Server"));
+	SetConsoleTitle(TEXT("Authentication Server"));
 
 	// CHECK INI FILE AND START PROGRAM
 	int rc = app.Create(argc, argv, ".\\config\\AuthServer.ini");

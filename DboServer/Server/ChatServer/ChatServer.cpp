@@ -217,7 +217,7 @@ int main(int argc, _TCHAR* argv[])
 	SYSTEMTIME ti;
 	GetLocalTime(&ti);
 
-	SetConsoleTitle(TEXT("OpenDBO Chat Server"));
+	SetConsoleTitle(TEXT("Chat Server"));
 
 	int rc = app.Create(argc, argv, ".\\config\\ChatServer.ini");
 	if (NTL_SUCCESS != rc)
